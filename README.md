@@ -11,7 +11,7 @@ Hackwar has several features such as:-
 * Various level of challenges
 * Badges for appreciation
 * Custom profiles
-* Extensive gamifications
+* Extensive gamification
 
 Screenshots
 -------------
