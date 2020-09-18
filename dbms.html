@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DBMS</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
+
+</head>
+<body style="background-color: white !important;">
+<div class="w3-content" style="margin-top: 100px;border:2px solid #192a56;padding:50px;margin-bottom: 100px">
+	<h2 style="font-size: 40px"class="w3-text-teal"><b>DBMS</b></h2>
+<br>
+
+<!--question-->
+
+<div class="w3-row w3-card w3-padding innerrow3" >
+
+	<h4>1. A report generator is used to</h4>
+	
+	<input type="radio" name="db1" value="1" id="db1"> update files<br>
+	<input type="radio" name="db1" value="2" id="db1"> print files on paper<br><!--correct-->
+	<input type="radio" name="db1" value="3" id="db1"> data entry<br>
+	<input type="radio" name="db1" value="4" id="db1"> All of the above<br>
+</div>
+<br>
+<!--question-->
+
+<div class="w3-row w3-card w3-padding innerrow3" >
+ <h4>2. What is the language used by most of the DBMSs for helping their users to access data?</h4>
+	
+	<input type="radio" name="db2" value="1" id="db2"> High level language<br>
+	<input type="radio" name="db2" value="2" id="db2"> Query language<br><!--correct-->
+	<input type="radio" name="db2" value="3" id="db2"> 	SQL<br>
+	<input type="radio" name="db2" value="4" id="db2"> 	4GL<br>
+</div>
+<br>
+<!--question-->
+
+<div class="w3-row w3-card w3-padding innerrow3" >
+
+	<h4>3. An-owner-member set in the CODASYL specifications may have</h4>
+	
+	<input type="radio" name="db3" value="1" id="db3"> only one owner but many owner occurrences<br><!--correct-->
+	<input type="radio" name="db3" value="2" id="db3"> only one member but many member occurrence<br>
+	<input type="radio" name="db3" value="3" id="db3"> more than one member but only one occurrence per member<br>
+	<input type="radio" name="db3" value="4" id="db3"> All of the above<br>
+</div>
+<br>
+<!--question-->
+
+<div class="w3-row w3-card w3-padding innerrow3" >
+
+	<h4>4. Which of the following statements contains an error?</h4>
+
+	<input type="radio" name="db4" value="1" id="db4"> Select * from emp where empid = 10003;<br>
+	<input type="radio" name="db4" value="2" id="db4"> Select empid from emp where empid = 10006; <br><!--correct answer-->
+	<input type="radio" name="db4" value="3" id="db4"> Select empid from emp;<br>
+	<input type="radio" name="db4" value="4" id="db4"> Select empid where empid = 1009 and lastname = ‘GELLER’;<br>
+</div>
+<br>
+<!--question-->
+
+<div class="w3-row w3-card w3-padding innerrow3" >
+<h4>5. 
+The wildcard in a WHERE clause is useful when?</h4>
+
+	
+	<input type="radio" name="db5" value="1" id="db5"> An exact match is necessary in a SELECT statement.<br>
+	<input type="radio" name="db5" value="2" id="db5"> An exact match is not possible in a SELECT statement.<br><!--correct-->
+	<input type="radio" name="db5" value="3" id="db5"> 	An exact match is necessary in a CREATE statement.<br>
+	<input type="radio" name="db5" value="4" id="db5"> An exact match is not possible in a CREATE statement.<br>
+</div>
+<br>
+<!--question-->
+
+<div class="w3-row w3-card w3-padding innerrow3" >
+<h4>6. Consider the following set of relations<br>
+EMP ( emp_no,emp_name,dept_no,salary)<br>
+DEPT (dept_no,dept_name,location)<br>
+Write SQL query for the following<br>
+Find all the employees whose departments are located in 'Mumbai' and salary is greater than Rs. 20,000.</h4>
+
+	<input type="radio" name="db6" value="1" id="db6"> select emp_name from dept where dept_no and location='Mumbai';<br>
+	<input type="radio" name="db6" value="2" id="db6"> select emp_name from emp where salary > 20,000 and dept_no in (select dept_no from dept where location = 'Mumbai');<br><!--correct-->
+	<input type="radio" name="db6" value="3" id="db6"> select dept_no ,count(emp_no) from emp where salary > 50,000 group by dept_no;<br>
+	<input type="radio" name="db6" value="4" id="db6"> update table emp where emp_name='Mumbai';<br>
+</div>
+<br>
+<button class="sub w3-teal" >Submit</button>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CPP</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
+
+</head>
+<body style="background: #525252 !important">
+<div class="w3-content w3-white" style="margin-top: 100px;border:2px solid #192a56;padding:50px;margin-bottom: 100px">
+	<h2 style="font-size: 40px"class="w3-text-teal"><b>C++</b></h2>
+<br>
+
+<!--question-->
+
+<div class="w3-row w3-card w3-padding innerrow3" >
+    <pre>
+	<h4>1. Find the output
+#include &lt;iostream&gt;
+using namespace std;
+class Fraction
+{
+private:
+int den;
+int num;
+public:
+void print() { cout << num << "/" << den; }
+Fraction() { num = 1; den = 1; }
+int &Den() { return den; }
+int &Num() { return num; }
+};
+int main()
+{
+Fraction f1;
+f1.Num() = 7;
+f1.Den() = 9;
+f1.print();
+return 0;
+}</h4>
+	</pre>
+	<input type="radio" name="cp1" value="1" id="cp1"> 7/9<br><!--correct-->
+	<input type="radio" name="cp1" value="2" id="cp1"> 2/3<br>
+	<input type="radio" name="cp1" value="3" id="cp1"> 9/7<br>
+	<input type="radio" name="cp1" value="4" id="cp1"> 2/3<br>
+</div>
+<br>
+<!--question-->
+
+<div class="w3-row w3-card w3-padding innerrow3" >
+ <pre>
+ 	<h4>2. Find the output 
+#include &lt;iostream&gt;
+using namespace std;
+int array1[] = { 1200, 200, 2300, 1230, 1543 };
+int array2[] = { 12, 14, 16, 18, 20 };
+int temp, result = 0;
+int main()
+{
+for (temp = 0; temp < 5; temp++) {
+result += array1[temp];
+}
+for (temp = 0; temp < 4; temp++) {
+result += array2[temp];
+}
+cout << result;
+return 0;
+}
+ </pre>
+	
+	<input type="radio" name="cp2" value="1" id="cp2"> 6533<br><!--correct-->
+	<input type="radio" name="cp2" value="2" id="cp2"> 4568<br>
+	<input type="radio" name="cp2" value="3" id="cp2"> 7000<br>
+	<input type="radio" name="cp2" value="4" id="cp2"> 5845<br>
+</div>
+<br>
+<!--question-->
+
+<div class="w3-row w3-card w3-padding innerrow3" >
+
+	<h4>3. What does an escape code represent?</h4>
+	
+	<input type="radio" name="cp3" value="1" id="cp3"> backslash<br>
+	<input type="radio" name="cp3" value="2" id="cp3"> tab<br>
+	<input type="radio" name="cp3" value="3" id="cp3"> form feed<br>
+	<input type="radio" name="cp3" value="4" id="cp3"> alert<br><!--correct-->
+</div>
+<br>
+<!--question-->
+
+<div class="w3-row w3-card w3-padding innerrow3" >
+
+	<h4>4. Inline functions are useful when</h4>
+
+	<input type="radio" name="cp4" value="1" id="cp4"> Function is large with many nested loops<br>
+	<input type="radio" name="cp4" value="2" id="cp4"> 	Function has many static variables<br>
+	<input type="radio" name="cp4" value="3" id="cp4"> Function is small and we want to avoid function call overhead.<br><!--correct answer-->
+	<input type="radio" name="cp4" value="4" id="cp4"> None of the above<br>
+</div>
+<br>
+<!--question-->
+
+<div class="w3-row w3-card w3-padding innerrow3" >
+<h4>5. 
+Which of the following is true about inline functions and macros.</h4>
+
+	
+	<input type="radio" name="cp5" value="1" id="cp5"> Inline functions do type checking for parameters, macros don't<br>
+	<input type="radio" name="cp5" value="2" id="cp5"> Macros are processed by pre-processor and inline functions are processed in later stages of compilation.<br>
+	<input type="radio" name="cp5" value="3" id="cp5"> 	Macros cannot have return statement, inline functions can.<br>
+	<input type="radio" name="cp5" value="4" id="cp5"> All of the above<br><!--correct-->
+</div>
+<br>
+<!--question-->
+
+<div class="w3-row w3-card w3-padding innerrow3" >
+<h4>6. How can we make a C++ class such that objects of it can only be created using new operator? If user tries to create an object directly, the program produces compiler error.</h4>
+
+	<input type="radio" name="cp6" value="1" id="cp6"> Not possible<br>
+	<input type="radio" name="cp6" value="2" id="cp6"> By making destructor private<br><!--correct-->
+	<input type="radio" name="cp6" value="3" id="cp6">By making constructor private<br>
+	<input type="radio" name="cp6" value="4" id="cp6">By making both constructor and destructor private<br>
+</div>
+<br>
+<button class="sub w3-teal" >Submit</button>
+
+</div>
+</body>
+</html>

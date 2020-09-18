@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kosugi+Maru" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body >
+<!--navabr-->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <ul class="nav navbar-nav">
+      <li class="list"><a class="navbar-brand active" href="dash.html"><b>HackWars</b></a></li>
+  </ul>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav navbar-right profile">
+       
+        <li class="dropdown list">
+          <a class="dropdown-toggle"  href="dash.html">Dashboard</a>
+        </li>
+        <li class="list"><a href="challenge.html" class="dropdown-toggle">Challenge</a></li>
+         <li class="list"><a href="shop.html" class="dropdown-toggle" >Trade-off</a></li>
+     
+        <li class="list"><a href="#" class="dropdown-toggle">Profile</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--content-->
+<div class="w3-content w3-padding" >
+  <!--search-->
+<center><input type="text" name="search" id="search" placeholder="Username" style="outline:none;border:2px solid black;padding:15px;">
+<input type="submit" name="Search" value="Find User" style="outline:none;border:2px solid black;padding:15px;background: black;color: white"></center>
+	<!--<h2 style="font-family: 'Kosugi Maru', sans-serif;font-size: 50px;font-style: bold; padding: 10px;background-color: #9E9E9E;color: black" class="w3-card heading">PROFILE PAGE</h2>-->
+	<!--easy-->
+	<div class="w3-card " style="margin-top: 20px;background-color: black;">
+	  <h3 style="color: white;font-family: 'Kosugi Maru', sans-serif;font-size: 30px;font-style: bold; padding: 20px;" >NAME: <span id="name"></span></h3>	
+    <h3 style="color: white;font-family: 'Kosugi Maru', sans-serif;font-size: 30px;font-style: bold; padding: 0 20px 20px 20px;" >USERNAME: <span id="uname"></span></h3>
+   
+	
+</div>
+<!--dibs streak-->
+	
+	<!--row-->
+   <div class="w3-row" >
+   	<!--course-->
+   	<div class="w3-col m6 ">
+   	<div class=" w3-card innerrow2 " style="background-color: #F8EFBA;min-height: 150px">
+      
+      
+
+   	<h2 style="color:black;font-family: 'Kosugi Maru', sans-serif;"><i class="fa fa-money" ></i>DIBS: <span  style="border:2px solid black;padding: 4px">125</span></h2>
+      <br>
+   	<h2 style="color:black;font-family: 'Kosugi Maru', sans-serif;"><i class="fa fa-money" ></i>STREAKS: <span style="border:2px solid black;padding: 4px">12</span></h2>
+   	
+   	</div>
+   	</div>
+    <!--course-->
+   	<div class="w3-col m6 ">
+   	<div class="innerrow2 w3-card " style="background-color: #F8EFBA;min-height: 150px">
+   	 <h3 style="color: black;font-family: 'Kosugi Maru', sans-serif;font-size: 30px;font-style: bold; padding: 0 20px 20px 20px;" >RANK: <span id="rank"></span></h3>
+   	</div>
+   	</div>
+   </div>
+
+<!--follow-->
+  
+  <!--row-->
+   <div class="w3-row" style="padding-top: 20px">
+    <!--course-->
+    <div class="w3-col m6 ">
+    <div class=" w3-card innerrow2 " style="background-color: black;min-height: 150px">
+      
+      
+
+    <h2 style="color:white;font-family: 'Kosugi Maru', sans-serif;">FOLLOWERS: <span  style="border:2px solid white;padding: 4px">50</span></h2>
+      <br>
+    <h2 style="color:white;font-family: 'Kosugi Maru', sans-serif;">FOLLOWING: <span style="border:2px solid white;padding: 4px">30</span></h2>
+    
+    </div>
+    </div>
+    <!--course-->
+    <div class="w3-col m6 ">
+    <div class="innerrow2 w3-card " style="min-height: 150px;background-color: black">
+     <h3 style="color: white;font-family: 'Kosugi Maru', sans-serif;font-size: 30px;font-style: bold; " >LANGUAGES: </h3>
+     <h3 style="color: white;font-family: 'Kosugi Maru', sans-serif;font-size: 20px;font-style: bold; " >Python</h3>
+    <h3 style="color: white;font-family: 'Kosugi Maru', sans-serif;font-size: 20px;font-style: bold; " >C++</h3>
+    </div>
+    </div>
+   </div>
+
+<!--danger game-->
+<div class="w3-card " style="margin-top: 20px;background-color: #E50914;margin-bottom: 30px;">
+	  <h3 style="color: white;font-family: 'Kosugi Maru', sans-serif;font-size: 30px;font-style: bold; padding: 20px;" >BADGES</h3>	
+	<!--row-->
+   <div class="w3-row">
+   	<!--badge-->
+   	<div class="w3-col m4 ">
+   	<div class="innerrow w3-card " style="background-color: #221F1F">
+   	<img src="">
+   	</div>
+   	</div>
+    <!--badge-->
+    <div class="w3-col m4 ">
+    <div class="innerrow w3-card " style="background-color: #221F1F">
+    <img src="">
+    </div>
+    </div>
+    <!--badge-->
+    <div class="w3-col m4 ">
+    <div class="innerrow w3-card " style="background-color: #221F1F">
+    <img src="">
+    </div>
+    </div>
+   </div>
+</div>
+
+<!--row-->
+   <div class="w3-row" >
+    <!--course-->
+    <div class="w3-col m6 ">
+    <div class=" w3-card innerrow2 " style="background-color: #F8EFBA;min-height: 180px">
+      
+      
+    <h2 style="color:black;font-family: 'Kosugi Maru', sans-serif;"><b>NOTIFICATION</b></h2>
+    <h4 style="color:black;font-family: 'Kosugi Maru', sans-serif;">NEW CHALLENGE UP!<br>
+    Win the duel or loose your legendary badge.</h4>
+    <button class="sub " ><a href="datastructure.html">Accept</a></button>
+    
+    </div>
+    </div>
+    <!--course-->
+    <div class="w3-col m6 ">
+    <div class="innerrow2 w3-card " style="background-color: #F8EFBA;min-height: 180px">
+     <h3 style="color: black;font-family: 'Kosugi Maru', sans-serif;font-size: 30px;font-style: bold; padding: 0 5px 0px 20px;"><b>INTERNSHIP</b></h3>
+     <h4 style="color:black;font-family: 'Kosugi Maru', sans-serif;">!! Congratulations !! 
+      You have bagged an opportunity to be an intern at HackWars !! 
+    </h4>
+    <button class="sub " ><a href="l44.html">Accept</a></button>
+    </div>
+    </div>
+   </div>
+
+</div>
+<footer style="background-color: black;">
+<p style="color: white;padding: 10px;text-align: center;font-family: 'Kosugi Maru', sans-serif;font-size:20px">Copyright@2018-HackWars</p>
+</footer>
+
+ 
+</body>
+</html>
